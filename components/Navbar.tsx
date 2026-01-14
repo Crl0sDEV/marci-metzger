@@ -39,7 +39,7 @@ export default function Navbar() {
           isScrolled ? "py-4" : "py-6"
         } ${isScrolled ? "bg-luxury-white/95 backdrop-blur-md shadow-md text-luxury-dark" : "bg-transparent text-white"}`}
       >
-        <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
           <Link href="/" className="relative h-14 w-40 md:w-52 z-60">
             <Image
               src="/images/logo.webp"

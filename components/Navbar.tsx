@@ -100,7 +100,7 @@ export default function Navbar() {
             }}
           >
             <button
-              className="absolute top-8 right-6 lg:hidden focus:outline-none"
+              className="absolute top-10 right-6 lg:hidden focus:outline-none"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <X className="text-luxury-dark" size={28} />

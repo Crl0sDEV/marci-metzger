@@ -94,7 +94,7 @@ export default function Navbar() {
           />
 
           <div
-            className="fixed top-0 right-0 h-full w-[50%] md:w-[50%] max-w-100 bg-luxury-white text-luxury-dark shadow-2xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden flex flex-col pt-28 px-8 space-y-6"
+            className="fixed top-0 right-0 h-full w-[75%] md:w-[50%] max-w-100 bg-luxury-white text-luxury-dark shadow-2xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden flex flex-col pt-28 px-8 space-y-6"
             style={{
               animation: "slideIn 300ms ease-in-out",
             }}

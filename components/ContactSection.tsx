@@ -175,10 +175,16 @@ export default function ContactSection() {
                   }`}
                 />
                 <label
-                  className={`absolute left-0 top-3 text-sm transition-all peer-focus:-top-4 peer-focus:text-xs pointer-events-none uppercase tracking-wider ${
+                  className={`absolute left-0 text-sm transition-all pointer-events-none uppercase tracking-wider 
+                  ${
+                    formData.name
+                      ? "-top-4 text-xs text-luxury-gold"
+                      : "top-3 peer-focus:-top-4 peer-focus:text-xs peer-placeholder-shown:top-3"
+                  } 
+                  ${
                     errors.name
                       ? "text-red-500 peer-focus:text-red-500"
-                      : "text-gray-400 peer-focus:text-luxury-gold peer-placeholder-shown:top-3"
+                      : "text-gray-400 peer-focus:text-luxury-gold"
                   }`}
                 >
                   Full Name
@@ -204,10 +210,16 @@ export default function ContactSection() {
                   }`}
                 />
                 <label
-                  className={`absolute left-0 top-3 text-sm transition-all peer-focus:-top-4 peer-focus:text-xs pointer-events-none uppercase tracking-wider ${
+                  className={`absolute left-0 text-sm transition-all pointer-events-none uppercase tracking-wider
+                  ${
+                    formData.phone
+                      ? "-top-4 text-xs text-luxury-gold"
+                      : "top-3 peer-focus:-top-4 peer-focus:text-xs peer-placeholder-shown:top-3"
+                  } 
+                  ${
                     errors.phone
                       ? "text-red-500 peer-focus:text-red-500"
-                      : "text-gray-400 peer-focus:text-luxury-gold peer-placeholder-shown:top-3"
+                      : "text-gray-400 peer-focus:text-luxury-gold"
                   }`}
                 >
                   Phone Number
@@ -234,10 +246,16 @@ export default function ContactSection() {
                 }`}
               />
               <label
-                className={`absolute left-0 top-3 text-sm transition-all peer-focus:-top-4 peer-focus:text-xs pointer-events-none uppercase tracking-wider ${
+                className={`absolute left-0 text-sm transition-all pointer-events-none uppercase tracking-wider
+                ${
+                  formData.email
+                    ? "-top-4 text-xs text-luxury-gold"
+                    : "top-3 peer-focus:-top-4 peer-focus:text-xs peer-placeholder-shown:top-3"
+                } 
+                ${
                   errors.email
                     ? "text-red-500 peer-focus:text-red-500"
-                    : "text-gray-400 peer-focus:text-luxury-gold peer-placeholder-shown:top-3"
+                    : "text-gray-400 peer-focus:text-luxury-gold"
                 }`}
               >
                 Email Address
@@ -263,10 +281,16 @@ export default function ContactSection() {
                 }`}
               ></textarea>
               <label
-                className={`absolute left-0 top-3 text-sm transition-all peer-focus:-top-4 peer-focus:text-xs pointer-events-none uppercase tracking-wider ${
+                className={`absolute left-0 text-sm transition-all pointer-events-none uppercase tracking-wider
+                ${
+                  formData.message
+                    ? "-top-4 text-xs text-luxury-gold"
+                    : "top-3 peer-focus:-top-4 peer-focus:text-xs peer-placeholder-shown:top-3"
+                } 
+                ${
                   errors.message
                     ? "text-red-500 peer-focus:text-red-500"
-                    : "text-gray-400 peer-focus:text-luxury-gold peer-placeholder-shown:top-3"
+                    : "text-gray-400 peer-focus:text-luxury-gold"
                 }`}
               >
                 How can I help you?

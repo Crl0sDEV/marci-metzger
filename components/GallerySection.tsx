@@ -111,6 +111,8 @@ export default function GallerySection() {
               </div>
             </div>
 
+            <div className="absolute bottom-0 left-0 w-full h-1/2 bg-linear-to-t from-black/90 via-black/40 to-transparent z-10 pointer-events-none"></div>
+
             <div className="absolute top-4 right-4 md:top-6 md:right-6 z-20">
               <span className="text-white font-serif text-2xl md:text-3xl font-light opacity-90 drop-shadow-md">
                 {String(currentIndex + 1).padStart(2, "0")}

@@ -346,7 +346,7 @@ export default function ContactSection() {
                   href="https://wa.me/14259412560"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 border border-gray-300 rounded-full text-gray-600 hover:bg-[#25D366] hover:text-white transition-all"
+                  className="p-2 border border-gray-300 rounded-full text-gray-600  hover:bg-luxury-dark hover:text-white transition-all"
                 >
                   <WhatsAppIcon size={18} />
                 </a>
@@ -354,7 +354,7 @@ export default function ContactSection() {
                   href="https://www.yelp.com/biz/marci-metzger-the-ridge-realty-pahrump"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 border border-gray-300 rounded-full text-gray-600 hover:bg-[#FF1A1A] hover:text-white transition-all"
+                  className="p-2 border border-gray-300 rounded-full text-gray-600  hover:bg-luxury-dark hover:text-white transition-all"
                 >
                   <YelpIcon size={18} />
                 </a>

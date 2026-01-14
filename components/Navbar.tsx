@@ -100,7 +100,7 @@ export default function Navbar() {
             }}
           >
             <button
-              className="absolute top-6 right-6 lg:hidden focus:outline-none"
+              className="absolute top-8 right-6 lg:hidden focus:outline-none"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <X className="text-luxury-dark" size={28} />
@@ -131,16 +131,6 @@ export default function Navbar() {
         </>
       )}
 
-      <style>{`
-        @keyframes fadeIn {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
-        @keyframes slideIn {
-          from { transform: translateX(100%); }
-          to { transform: translateX(0); }
-        }
-      `}</style>
     </>
   )
 }

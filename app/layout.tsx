@@ -18,6 +18,10 @@ const lato = Lato({
 export const metadata: Metadata = {
   title: "Marci Metzger | Luxury Real Estate",
   description: "Premier real estate services in Pahrump.",
+  icons: {
+    icon: "/images/marci.png",
+    apple: "/images/marci.png",
+  },
 };
 
 export default function RootLayout({

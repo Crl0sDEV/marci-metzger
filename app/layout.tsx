@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Lato } from "next/font/google";
 import "./globals.css";
 
@@ -15,17 +15,23 @@ const lato = Lato({
   display: "swap",
 });
 
+export const viewport: Viewport = {
+  themeColor: "#1a1a1a",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export const metadata: Metadata = {
   title: "Marci Metzger | Luxury Real Estate",
   description: "Premier real estate services in Pahrump.",
-
+  manifest: "/manifest.json",
   icons: {
     icon: "/icons/favicon.ico",
     shortcut: "/icons/favicon.ico",
     apple: "/icons/apple-touch-icon.png",
   },
 
-  manifest: "/icons/site.webmanifest",
 };
 
 export default function RootLayout({

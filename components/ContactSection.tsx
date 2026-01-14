@@ -48,7 +48,10 @@ export default function ContactSection() {
     if (!formData.phone.trim()) {
       newErrors.phone = "Phone number is required";
       isValid = false;
-    } else if (!phoneRegex.test(formData.phone) || formData.phone.length < 10) {
+    } else if (
+      !phoneRegex.test(formData.phone) ||
+      formData.phone.length < 10
+    ) {
       newErrors.phone = "Invalid phone number";
       isValid = false;
     }
@@ -146,6 +149,14 @@ export default function ContactSection() {
         </div>
 
         <div className="w-full lg:w-2/3 bg-gray-50 p-8 md:p-12 lg:p-24 flex flex-col justify-between">
+          
+          <div className="max-w-2xl w-full mx-auto mb-8 animate-fade-in-up">
+             <h3 className="text-2xl md:text-3xl font-serif text-luxury-dark">
+                Online Inquiry
+             </h3>
+             <div className="w-12 h-1 bg-luxury-gold mt-2"></div>
+          </div>
+
           <form
             onSubmit={handleSubmit}
             className="max-w-2xl w-full mx-auto space-y-8"
@@ -397,7 +408,6 @@ export default function ContactSection() {
           allowFullScreen={true}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className="grayscale hover:grayscale-0 transition-all duration-700"
         ></iframe>
       </div>
     </section>

@@ -6,8 +6,8 @@ export default function SearchSection() {
   const logos = [
     { src: "/images/logo-1.webp", alt: "The Ridge" },
     { src: "/images/logo-2.webp", alt: "Equal Housing Opportunity" },
-    { src: "/images/logo-3.webp", alt: "Realtor" },
-    { src: "/images/logo-4.webp", alt: "Pahrump valley" },
+    { src: "/images/logo-3.png", alt: "Realtor" },
+    { src: "/images/logo-4.png", alt: "Pahrump valley" },
   ];
 
   return (
@@ -152,7 +152,7 @@ export default function SearchSection() {
             {logos.map((logo, index) => (
               <div
                 key={index}
-                className="relative h-12 w-32 md:h-16 md:w-40 lg:h-24 lg:w-52 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-pointer"
+                className="relative h-12 w-32 md:h-16 md:w-40 lg:h-24 lg:w-52 opacity-60 hover:opacity-100 transition-all duration-500 cursor-pointer"
               >
                 <Image
                   src={logo.src}

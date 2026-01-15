@@ -90,7 +90,6 @@ export default function GallerySection() {
                 alt="Background Blur"
                 fill
                 className="object-cover blur-2xl opacity-60 scale-110"
-                priority
               />
               <div className="absolute inset-0 bg-black/40"></div>
             </div>
